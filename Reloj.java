@@ -1,5 +1,8 @@
 package Ejercicio003;
 
+import java.util.Calendar;
+import java.util.GregorianCalendar;
+
 public class Reloj {
 	private int hora, minuto, segundo;
 
@@ -204,8 +207,12 @@ public class Reloj {
 		
 		return segundo;
 	}
-	
-	
+
+	public String horaLocal(){
+		Calendar calendario= new GregorianCalendar();
+		return (calendario.get(Calendar.HOUR_OF_DAY)+":"+calendario.get(Calendar.MINUTE)+":"+calendario.get(Calendar.SECOND));
+	}
+
 	@Override
 	public String toString() {
 		return String.format("[%02d", this.hora) + ":" + 

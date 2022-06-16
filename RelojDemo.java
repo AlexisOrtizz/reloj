@@ -39,6 +39,10 @@ public class RelojDemo {
 		System.out.print("\n" + reloj + " + " + reloj2 + " = ");
 		reloj.addReloj(reloj2);
 		System.out.print(reloj);
+
+		Reloj reloj3=new Reloj();
+		System.out.println("\n\nHora local: "+reloj3.horaLocal());
+
 	}
 
 }
